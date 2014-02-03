@@ -4,20 +4,19 @@
 
 def partition(input1)
    if (!input1.detect { |i| i <= 0 }.nil?)
-     return "Invalid"#-1
+     return "Invalid"
    else 
-     input = input1.sort    
-     #arr = split(input)
+     input = input1.sort
      sum = (input1.inject(0){|sum,item| sum + item})
      if(sum%2 == 0)
      t=isSubsetSum(input1,input1.length ,sum/2)
      else
-     return "No"#-1
+     return "No"
      end
      if(t)
-       return "Yes"#1
+       return "Yes"
      else
-       return "No"#0
+       return "No"
      end
    end
 end
