@@ -2,24 +2,24 @@
 
 class Stack
 
-  def initialize
-		@stack = []
+	def initialize
+	@stack = []
 	end
 	
 	def push(x)
-		@stack.push x
+	@stack.push x
 	end
 	
 	def pop
-		@stack.pop
+	@stack.pop
 	end
 	
 	def top
-		@stack.last
+	@stack.last
 	end
 	
 	def is_empty?
-		@stack.empty?
+	@stack.empty?
 	end
 
 
